@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Header, Sidebar } from './components';
 import {Login} from "./pages"
 
 const App = () => {
-  const [auth, setAuth] = useState(false)
+  const [auth, setAuth] = useState(true)
 
   if(!auth){
     return (
@@ -14,7 +15,8 @@ const App = () => {
 
   return (
     <main>
-      Welcome
+      <Header />
+      <Sidebar />
     </main>
   );
 }
