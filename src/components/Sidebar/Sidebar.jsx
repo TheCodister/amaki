@@ -11,7 +11,7 @@ const CategoryItem = ({title, quantity}) => {
 }
 
 const Sidebar = () => {
-  const categories = ["Toys", "Eletronics", "Clothes", "Housewares", "LifeStyles" ]
+  const categories = ["Toys", "Eletronics", "Clothes", "Housewares", "LifeStyles", "PC&Laptop", "Watch","Health","Sport&Traveling","Bookstore" ]
   return (
     <div className='sidebar'>
       <h1>Category</h1>

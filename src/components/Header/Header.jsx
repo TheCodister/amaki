@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header.css"
 import {BiSearch} from 'react-icons/bi'
+import Popupprofile from '../Profile/Profile'
 
 
 const User = () => {
+  const[buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="user_container">
-      <img src="/images/user.jpg" alt="user avatar" />
+      <img className="profile_button" onClick={() => setButtonPopup(true)} src="/images/user.jpg" alt="user avatar" />
+      <Popupprofile trigger={buttonPopup} setTrigger={setButtonPopup}>
+      </Popupprofile>
       <span>Alexander</span>
     </div>
   )

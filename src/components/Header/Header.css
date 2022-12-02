@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1em 3em;
+  background-color: rgb(136, 179, 252);
 }
 
 .user_container {
@@ -11,34 +12,41 @@
   justify-content: center;
   gap: 1em;
   font-weight: bold;
-  color: #708CBF;
+  color: #ffffff;
 }
 
-.user_container img {
+.profile_button {
   width: 3em;
   height: 3em;
-  border: 3px solid #708CBF;
+  border: 3px solid #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .header_logo {
-  width: 8em;
-  height: auto;
+  width: 10em;
+  height: 4em;
+  background-color: white;
+  border-radius: 2em;
+  border-style: solid;
 }
 .search{
     display: flex;
     align-items: center;
     gap: 0.5em;
-    border: 2px solid #708CBF;
-    padding: 0.5em 1em; 
-    border-radius: 0.8em;
+    border: 3px solid #000000;
+    padding: 1em 1.5em; 
+    border-radius: 1em;
+    background-color: white;
 }
 
 .search_box {
   outline: none;
   border:none;
   font-weight:500;
+  font-size: large;
   width: 50em;
+  height: 1.5em;
 }
 
 .search_icon {
